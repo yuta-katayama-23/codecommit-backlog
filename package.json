@@ -1,0 +1,19 @@
+{
+  "name": "codecommit-backlog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node local/local-test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "lambda-local": "^2.0.0",
+    "path": "^0.12.7"
+  }
+}
