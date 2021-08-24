@@ -7,6 +7,7 @@ const regex = /test/;
 
 const jsonPayload = {
     detail: {
+        event: "referenceUpdated",
         commitId: process.env.TEST_COMMIT_ID,
         repositoryName: process.env.TEST_REPO_NAME
     }
