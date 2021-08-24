@@ -3,7 +3,7 @@ const path = require("path");
 const dotenv = require('dotenv')
 dotenv.config();
 
-const regex = /local/;
+const regex = /test/;
 
 const jsonPayload = {
     detail: {
@@ -17,7 +17,7 @@ const main = async () => {
         const response = await lambdaLocal.execute({
             event: jsonPayload,
             lambdaPath: path.join(__dirname.replace(regex, ""), 'index.js'),
-            timeoutMs: 3000
+            timeoutMs: 5000
         })
         console.log("response", response);
     } catch (error) {
